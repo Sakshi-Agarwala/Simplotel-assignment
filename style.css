@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width:100%;
+    height: auto;
+}
+
+.bannerCont {
+    position: relative;
+  }
+  
+  .image-button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    bottom: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, black,white);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .texts {
+    background: rgb(201, 201, 201);
+    display: flex;
+  }
+  
+  .para {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    box-sizing: border-box;
+    font-size:medium;
+    text-align: center;
+    color: #000;
+  }
+
+  .amenityheader {
+    padding: 50px;
+    margin: 0;
+  }
+
+  .amenity {
+    float:inline-start;
+    width: 33.33%;
+    padding: 50px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 0%;
+    color: #000;
+
+
+  }
+
+  .amenity img {
+    max-width: 100%;
+  }
+
+  .amenity .one {
+    text-align: left;
+  }
+
+  .amenity .two {
+    text-align: center;
+    align-items: center;
+
+  }
+
+  .amenity .three {
+    text-align: right;
+  }
+
+  .rooms {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-content: center;
+  }
+
+  .dining {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    position:absolute;
+    -moz-box-align: center;
+    box-align: center;
+    margin-left: 8%;
+  }
+
+  .pool {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    float: right;
+  }
+
+
+  
+  header{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgb(249, 249, 249);
+}
+#chk1{
+    display: none;
+     
+     
+}
+i{
+    color: #000000;
+    cursor: pointer;
+    border-radius: 100%;
+    width:20px;
+    height: 20px;
+    border: #000 solid 1px;
+    padding-left: 7px;
+    padding-top: 5px;
+}
+
+i:hover{
+    color:  #ffffff;
+    cursor: pointer;
+    border-radius: 100%;
+    
+    width:20px;
+    height: 20px;
+    border: #ffffff solid 1px;
+    padding-left: 7px;
+    padding-top: 5px; 
+
+}
+header .logo{
+    flex: 1;
+    color:#fff;
+     
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+header ul {
+    flex:2;
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color:#0e0e0e;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+header ul li a:hover{
+    color: #ffffff;
+    background: linear-gradient(to right, black, gray, white);
+}
+header .menu{
+    font-size: 2.5em;
+    display: none;
+}
+@media(max-width:700px){
+    
+    header ul{
+        position: fixed;
+        top:100px;
+        right: -100%;
+        background: rgb(255, 255, 255);
+        height: calc(100vh - 100px);
+        width:50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+     
+    header .menu{
+        display: block;
+        width:100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+        
+    }
+
+    i {
+    color: #000000;
+    cursor: pointer;
+    }
+
+    .image-button {
+        font-size:x-small;
+        position: absolute;
+        width: 120px;
+        height: 30px;
+        bottom: 2%;
+        left: 2%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(to right, black,white);
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-left: 75px;
+    }
+      
+    .para {
+        float: left;
+        width: 33.33%;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size:smaller;
+        text-align: center;
+        color: #000;
+    }
+
+    .amenityheader {
+            padding: 20px;
+            margin: 0;
+            font-size: medium;
+            color: #000;
+            text-align: center;
+    }
+
+    .amenity
+    {
+        float: none;
+        padding: 50px;
+        font-size: x-small;
+        width: 100%;
+    }
+        
+    .rooms {
+            background: black;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            align-content: center;
+    }
+        
+    .dining {
+            background: black;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            position:absolute;
+            -moz-box-align: center;
+            margin-left: 30%;
+    }
+        
+    .pool {
+            background: black;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            float: right;
+    }
+  
+}
+
+k {
+    color: #000000;
+    cursor: pointer;
+}
+
+k:hover{
+    color:  #5e5e5e;
+    cursor: pointer;
+}
